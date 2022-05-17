@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a VUE</title>
+</head>
+<body>
+
+    <h2>v-on</h2>
+    <div id="ej_vOn">
+        <button v-on:click="contador += 1">Agregar 1</button>
+        <button v-on:click="contador -= 1">Quitar 1</button>
+        <p v-if="contador<=5">Se ha hecho clic en el botón de arriba {{ contador }} veces.</p>
+        <p v-else="">Demasiados intentos: {{ contador }}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="v-on.js"></script>
+</body>
+</html>

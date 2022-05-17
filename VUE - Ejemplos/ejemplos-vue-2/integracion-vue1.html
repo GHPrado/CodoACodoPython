@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <style>
+        #aviso{color:red;}
+    </style>
+</head>
+<body>
+    <div id="ej_agregar">
+        <h1>{{titulo}}</h1>
+        <h2>{{subtitulo}}</h2>
+        <ul>
+            <li v-for="producto in productos"> 
+                <!-- {{ producto.nombre }} - {{ producto.cantidad }}  -->
+                <!-- {{ producto.nombre }} - <input type="number" v-model.number="producto.cantidad"> -->
+                {{ producto.nombre }} - {{ producto.cantidad }}
+                <button @click=producto.cantidad++>+</button>
+                <button @click=producto.cantidad-->-</button>
+            </li>
+        </ul>
+        <h4>Total: {{sumarProductos}}</h4>
+        Escriba un producto:
+        <input type="text" v-model="nuevoProducto" @keyup.Enter="agregarProductoConIf()">
+        <button v-on:click=agregarProductoConIf()>Agregar</button>
+        <span id="aviso"></span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="integracion-vue1.js"></script>
+</body>
+</html>

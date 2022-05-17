@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directiva v-for</title>
+</head>
+<body>
+    <h2>Ejemplo v-for</h2>
+    <ul id="ej1">
+        <li v-for="fruta in frutas">
+            {{fruta.nombre}}
+        </li>
+    </ul>
+
+    <!-- Conexión con CDN Vue y con nuestro archivo .js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="v-for.js"></script>
+</body>
+</html>
