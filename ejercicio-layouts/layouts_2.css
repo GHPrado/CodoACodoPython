@@ -1,0 +1,39 @@
+*{
+    border: 1px solid black;
+}
+header{
+    background-color:#89e6fa;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+nav{
+    background-color: #e7fac4;
+}
+section{
+    background-color: #ffa94d;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+ article{
+    background-color: #6ca8e8;
+}
+aside{
+    background-color: #d2bdf0;
+    height: 50px;
+    line-height: 50px;
+}
+footer{
+    background-color: #89e6fa;
+    height: 40px;
+    line-height: 40px;
+}
+
+span{
+    margin: 10px;
+    background-color: blue;
+    border: 1px solid red;
+    color: white;
+    padding: 5px;
+} 
